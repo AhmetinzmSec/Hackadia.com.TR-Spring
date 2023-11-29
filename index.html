@@ -14,32 +14,70 @@
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
+   <link rel="stylesheet" href="assets/css/snowflake.css">
+
    <title>Hackadia - Siber Güvenliğin Öncüleri
    </title>
+   <link rel="manifest" href="./manifest.json">
 </head>
 
 <body>
+
+   <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+      <div class="snowflake">
+         <img src="assets/img/leaf.png" alt="">
+      </div>
+   </div>
+
    <!--==================== HEADER ====================-->
    <header class="header" id="header">
       <nav class="nav container">
          <a href="" class="nav__logo">
-            <img src="assets/img/hackadia.png" alt="" class="logo">
+            <img src="assets/img/hackadia.png" alt="" class="logo"> 
+            
          </a>
 
          <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
 
-               <li class="nav__item"><a href="" class="nav__link">Ana Sayfa</a></li>
-               <li class="nav__item"><a href="" class="nav__link">Projeler</a></li>
-               <li class="nav__item"><a href="" class="nav__link">Hedef</a></li>
-               <li class="nav__item"><a href="" class="nav__link">İletişim</a></li>
+               <li class="nav__item"><a href="#home" class="nav__link">Ana Sayfa</a></li>
+               <li class="nav__item"><a href="#projects" class="nav__link">Projeler</a></li>
+               <li class="nav__item"><a href="#target" class="nav__link">Hedef</a></li>
+               <li class="nav__item"><a href="#contact" class="nav__link">İletişim</a></li>
 
             </ul>
 
             <div class="nav__buttons">
 
-               <a href="" class="nav__button-link">Discord</a>
-               <a href="" class="nav__button-ghost">GitHub</a>
+               <a href="https://discord.com/invite/7AT4YScNe8" class="nav__button-link">Discord</a>
+               <a href="https://github.com/hackadia" class="nav__button-ghost">GitHub</a>
 
             </div>
 
@@ -62,7 +100,7 @@
    <!--==================== MAIN ====================-->
    <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home">
+      <section class="home" id="home">
          <div class="home__container container">
             <div class="home__content">
                <div class="home__data">
@@ -99,10 +137,6 @@
 
             </div>
 
-            <div class="last-text">
-               <p>© 2022 - 2023 <a href="https://hackadia.com.tr">Hackadia</a> TÜM HAKLARI SAKLIDIR</p>
-            </div>
-
          </div>
 
       </section>
@@ -115,6 +149,8 @@
 
    <!--=============== MAIN JS ===============-->
    <script src="assets/js/main.js"></script>
+
+   <script src="./script.js"></script>
 </body>
 
 </html>
