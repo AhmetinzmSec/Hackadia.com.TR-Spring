@@ -8,6 +8,7 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(195, 100%, 30%);
   --link-color: hsl(195, 87%, 65%);
+  --hackadia-color: hsl(219, 87%, 65%);
   --gradient-color: linear-gradient(90deg,
       hsl(210, 55%, 20%),
       hsl(192, 62%, 25%));
@@ -84,6 +85,19 @@ img {
   /* For animation */
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--title-color);
+  border-radius: 5px;
+}
+
 /*=============== HEADER & NAV ===============*/
 .header {
   position: fixed;
@@ -92,6 +106,7 @@ img {
   left: 0;
   border-color: var(--body-color);
   z-index: var(--z-fixed);
+  transition: all .2s;
 }
 
 .nav {
@@ -104,7 +119,18 @@ img {
 
 .nav__logo {
 
-  width: 40px;
+  width: 48px;
+  padding: 5px;
+  background-color: rgb(196, 217, 238, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  box-shadow: 1px 0px 5px 3px hsla(210, 55%, 24%, .1);
+
+}
+
+.name{
+
+  width: 102px;
 
 }
 
@@ -140,6 +166,11 @@ img {
   flex-direction: column;
   text-align: center;
   row-gap: 2rem;
+  padding: 20px;
+  background-color: rgb(196, 217, 238, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 1px 0px 5px 3px hsla(210, 55%, 24%, .1);
 }
 
 .nav__link {
@@ -165,10 +196,10 @@ img {
 }
 
 .nav__button-ghost {
-  background-color: hsla(0, 0%, 100%, .3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   padding: 1rem 2.5rem;
-  border: 2px solid var(--title-color);
+  background-color: rgb(196, 217, 238, 0.2);
+  box-shadow: 1px 0px 5px 3px hsla(210, 55%, 24%, .1);
   border-radius: 0.75rem;
 }
 
@@ -279,7 +310,6 @@ img {
 
 }
 
-
 .last-text p {
   position: fixed;
   bottom: 10px;
@@ -297,8 +327,15 @@ img {
 }
 
 .last-text a {
-  color: var(--link-color);
+  color: var(--hackadia-color);
 }
+
+/* .scroll-header{
+
+  /* background-color: rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(20px);
+
+} */
 
 
 /*=============== BREAKPOINTS ===============*/
@@ -381,12 +418,6 @@ img {
 
     flex-direction: row;
     column-gap: 3rem;
-
-  }
-
-  .nav__logo {
-
-    width: 48px;
 
   }
 
